@@ -30,26 +30,26 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
     buttons = [
         [
             InlineKeyboardButton(
-                text="ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ",
+                text="➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕",
                 url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
-            )
+            ),
+        ],
+        [
+            InlineKeyboardButton(text="🥀 ᴍᴀɪɴᴛᴀɪɴᴇʀ 🥀", user_id=OWNER),
+            InlineKeyboardButton(
+                text="🍁 sᴜᴩᴩᴏʀᴛ 🍁", url=f"{config.SUPPORT_GROUP}"
+            ),
         ],
         [
             InlineKeyboardButton(
-                text="ʜᴇʟᴩ", callback_data="settings_back_helper"
-            )
+                text="🔰 sᴇᴇ ᴍʏ ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs 🔰", callback_data="settings_back_helper"
+            ),
         ],
         [
-            InlineKeyboardButton(
-                text="❣ sᴜᴩᴩᴏʀᴛ ❣", url=config.SUPPORT_GROUP
+            InlineKeyboardButton(text="✨ ᴄʜᴀɴɴᴇʟ ✨", url=f"{config.SUPPORT_CHANNEL}"
             ),
             InlineKeyboardButton(
-                text="🥀 ᴍᴀɪɴᴛᴀɪɴᴇʀ 🥀", user_id=OWNER
-            )
-        ],
-        [
-            InlineKeyboardButton(
-                text="✨ sᴏᴜʀᴄᴇ ✨", url=config.UPSTREAM_REPO
+                text="✨ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ✨", url=f"https://telegra.ph/file/9b0455dae14d5639f936d.mp4"
             )
         ],
      ]

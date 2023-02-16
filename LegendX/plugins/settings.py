@@ -1,3 +1,4 @@
+import config
 from pyrogram import filters
 from pyrogram.errors import MessageNotModified
 from pyrogram.types import (CallbackQuery, InlineKeyboardButton,
